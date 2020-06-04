@@ -562,6 +562,8 @@ namespace ServiceStack
                 HostContext.CompleteRequest(req);
             }
         }
+
+        public virtual ICookies GetCookies(IHttpResponse res) => new Cookies(res);
     }
 
 }
